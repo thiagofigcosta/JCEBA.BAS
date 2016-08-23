@@ -2,8 +2,8 @@ CC=g++
 SRC=$(wildcard *.c)
 OBJ= $(SRC:.c=.o)
 EXEC=JCEBA.BAS
-CFLAGS=-c -Wall -Wsign-compare -Wwrite-strings
-LDFLAGS=-lglut -lGLU -lGL -lm -lSOIL 
+CFLAGS=-c -Wsign-compare -Wwrite-strings -Wall
+LDFLAGS=-lglut -lGLU -lGL -lm -lSOIL
 
 all: $(SCR) $(EXEC)
 

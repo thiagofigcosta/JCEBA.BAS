@@ -1,6 +1,8 @@
-double R=0;
-double G=0;
-double B=0;
+double R=0,G=0,B=0;
+int sR=1,sG=1,sB=1;
+#define CHANGES 10
+#define COLORSCALE 0.0039215686
+#define STEPCOLORSIZE 1
 
 void selectColor(char* color) {
   R=1;G=1;B=1;
@@ -57,4 +59,46 @@ void drawTexture(float x0, float y0, float x1, float y1,GLuint textureIndex){
   glDisable(GL_TEXTURE_2D);
   glFlush();
   glColor3f(R, G, B);
+}
+
+void genColor(){
+    if(rand()%CHANGES==0)
+        switch(rand()%7){
+            case 0:
+                sR=1,sG=1,sB=-1;
+            break;
+
+            case 1:
+                sR=1,sG=-1,sB=1;
+            break;
+
+            case 2:
+                sR=1,sG=-1,sB=-1;
+            break;
+
+            case 3:
+                sR=-1,sG=1,sB=1;
+            break;
+
+            case 4:
+                sR=-1,sG=1,sB=-1;
+            break;
+
+            case 5:
+                sR=-1,sG=-1,sB=1;
+            break;
+
+            case 6:
+                sR=-1,sG=-1,sB=-1;
+            break;
+        }
+    R+=COLORSCALE*STEPCOLORSIZE*sR;
+    G+=COLORSCALE*STEPCOLORSIZE*sG;
+    B+=COLORSCALE*STEPCOLORSIZE*sB;
+    if(R<0)R=0;
+    if(R>1)R=1;
+    if(G>1)G=1;
+    if(G<0)G=0;
+    if(B>1)B=1;
+    if(B<0)B=0;
 }

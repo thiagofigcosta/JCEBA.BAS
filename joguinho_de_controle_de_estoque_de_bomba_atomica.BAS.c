@@ -15,7 +15,6 @@
 GLuint tex_Splash[24];
 
 void drawScene(void){
-    glClearColor(0, 0, 0, 0);
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
@@ -53,6 +52,10 @@ void keyboard(unsigned char key, int x, int y){
    }
 }
 
+void idle(){
+  
+}
+
 int main(int argc, char **argv){
     glutInit(&argc, argv);
     glutInitContextVersion(1, 1);
@@ -67,6 +70,7 @@ int main(int argc, char **argv){
     glutDisplayFunc(drawScene);
     glutReshapeFunc(reshape);
     glutKeyboardFunc(keyboard);
+    glutIdleFunc(idle);
 
     setup();
     glutMainLoop();

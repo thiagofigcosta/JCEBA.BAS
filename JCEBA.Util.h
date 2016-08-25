@@ -1,18 +1,48 @@
 //JCEBA.Util.h
+#include <string.h>
+#include <time.h>
+#include <stdlib.h>
+#include <math.h>
 
 //parametros pra passar no drawScene do main
 #define SPLASH -111
-#define PREMENU -117
 #define MENU -112
 #define JOGO -113
 #define OPCOES -114
 #define INSTRUCOES -115
 #define CREDITOS -116
+#define PREMENU -117
+#define NUM_JOGADORES -118
+#define ESC_PERSONAGEM -119
+#define PRE_PARTIDA -120
+#define SAIR -121
 
+#define worldWidth 800
+#define worldHeight 600
+
+#define RUSSIA 51
+#define BRASIL 114
+#define ISLAMIC 666
+#define USA 333
+#define KOREA 24
 
 char* filePath;
-float currentWidth,currentHeight;
+
+int ENTER=0,MOUSE1=0;
+float currentWidth=worldWidth,currentHeight=worldHeight;
 int mouseX=0,mouseY=0;
+int players=1;
+int player1,player2;
+int soundState=1,musicState=1;
+
+typedef struct point{
+  int x;
+  int y;
+} Point;
+typedef struct rectangle{
+  Point p0;
+  Point p1;
+} Rectangle;
 
 //tem uma fun�ao q faz isso no string.h ��
 int strEq(char* str1, char*str2){
@@ -61,4 +91,12 @@ void getAnimatedFiles(char* str1,int index,char*str2){
     }else
       filePath[i]=str2[i-strlen(str1)-getNumberAlgo(index)];
   }
+}
+
+float dynamicX(float x){
+  return x*currentWidth/worldWidth;
+}
+
+float dynamicY(float y){
+  return y*currentHeight/worldHeight;
 }

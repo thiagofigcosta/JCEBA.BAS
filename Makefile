@@ -1,9 +1,9 @@
 CC=g++
 SRC=$(wildcard *.c)
 OBJ= $(SRC:.c=.o)
-EXEC=JCEBA.BAS
+EXEC=bin/JCEBA.BAS
 CFLAGS=-c -w -Wall
-LDFLAGS=-lglut -lGLU -lGL -lm -lSOIL
+LDFLAGS=-lglut -lGLU -lGL -lm -lSOIL -lalut -lopenal
 
 all: $(SCR) $(EXEC)
 
@@ -18,6 +18,10 @@ clean:
 
 run: all
 	./$(EXEC)
+
+rerun: clean all
+	./$(EXEC)
+	rm -rf *.o
 
 install: all
 	@mv $(EXEC) $(bindir)/

@@ -1,0 +1,18 @@
+#botoes em ingles
+#carregar sons na lib LoadFiles
+#mudar reconhecimento do mouse pra borda de descida
+#colocar sons,idioma nas opcoes
+#glColor3f diferente no player2 se os personagens forem iguais
+#tirar lista de tudo
+#bandeira sumindo quando desenha o x
+
+#problema das lists e aspect ratio(matrix/dynamic)
+
+afterfinish:
+#explosao na abertura
+#botao de escolher personagem random
+---------------------------------------------------------
+glNewList(onePlayerButton,GL_COMPILE);
+    drawTexture(-80,-160,80,-130,0.5,tex_btn_1P);glEndList();
+glNewList(twoPlayersButton,GL_COMPILE);
+    drawTexture(-80,-200,80,-170,0.5,tex_btn_2P);glEndList();

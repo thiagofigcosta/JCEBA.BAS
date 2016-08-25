@@ -3,7 +3,7 @@ SRC=$(wildcard *.c)
 OBJ= $(SRC:.c=.o)
 EXEC=JCEBA.BAS
 CFLAGS=-c -w -Wall
-LDFLAGS=-lglut -lGLU -lGL -lm -lSOIL
+LDFLAGS=-lglut -lGLU -lGL -lm -lSOIL -lalut -lopenal
 
 all: $(SCR) $(EXEC)
 
@@ -17,6 +17,9 @@ clean:
 	rm -rf *.o $(EXEC)
 
 run: all
+	./$(EXEC)
+
+rerun: clean all
 	./$(EXEC)
 
 install: all

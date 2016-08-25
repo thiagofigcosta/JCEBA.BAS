@@ -1,0 +1,7 @@
+texto ffe300
+brilho 000000
+ativo 10 inativo 0
+pena 10
+fonte cooper
+tamano 180
+http://pt.flamingtext.com/Free-Logo-Designs/page4

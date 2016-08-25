@@ -1,5 +1,20 @@
-char* filePath;
+//JCEBA.Util.h
 
+//parametros pra passar no drawScene do main
+#define SPLASH -111
+#define PREMENU -117
+#define MENU -112
+#define JOGO -113
+#define OPCOES -114
+#define INSTRUCOES -115
+#define CREDITOS -116
+
+
+char* filePath;
+float currentWidth,currentHeight;
+int mouseX=0,mouseY=0;
+
+//tem uma fun�ao q faz isso no string.h ��
 int strEq(char* str1, char*str2){
     int i,value = 1;
     for(i=0;str1[i]!='\0';i++)

@@ -1,8 +1,28 @@
-double R=0,G=0,B=0;
+//JCEBAS.GL.h
+double R=0,G=0,B=0,A=0;
 int sR=1,sG=1,sB=1;
 #define CHANGES 10
 #define COLORSCALE 0.0039215686
 #define STEPCOLORSIZE 1
+
+//coloquei esses defines aqui
+#define PI 3.14159265
+#define worldWidth 800
+#define worldHeight 600
+//#define worldHeight 800
+//^assim os quadrados ficam quadrados,prefiro
+
+//implementei
+void drawPolygon(float raio,unsigned long int lados,float x0,float y0,float z)
+{
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex3f(x0,y0,z);
+    for(int i=0;i<=lados;i++)
+    {
+        glVertex3f(cos(2*PI*i/lados)*raio+x0,sin(2*PI*i/lados)*raio+y0,z);
+    }
+    glEnd();
+}
 
 void selectColor(char* color) {
   R=1;G=1;B=1;
@@ -28,22 +48,32 @@ void selectColor(char* color) {
   glColor3f(R, G, B);
 }
 
-void drawText(void* font, char* text, float x, float y){
-  glRasterPos2f(x, y);
+void drawText(void* font, char* text, float x, float y,float z){
+  glRasterPos3f(x, y,z);
   for (unsigned int i = 0;i<strlen(text);i++) {
      glutBitmapCharacter(font, text[i]);
   }
-   glFlush();
+  //� melhor deixar isso na fun�ao draw,pq se n da bosta
+   //glutSwapBuffers();
+   //ou usar o post redisplay,mais pra frente a gente v�
+   //glutPostRedisplay();
+    //por enquanto bora deixar o comando pra desenhar manual e no main,acho q fica melhor
 }
 
-void drawRectangle(float x0, float y0, float x1, float y1){
+//agora precisa do z,pra fazer coisas no fundo background
+void drawRectangle(float x0, float y0, float x1, float y1,float z){
+
    glBegin(GL_POLYGON);
-        glVertex3f(x0, y0, 0);
-        glVertex3f(x1, y0, 0);
-        glVertex3f(x1, y1, 0);
-        glVertex3f(x0, y1, 0);
+        glVertex3f(x0, y0, z);
+        glVertex3f(x1, y0, z);
+        glVertex3f(x1, y1, z);
+        glVertex3f(x0, y1, z);
+
     glEnd();
-    glFlush();
+
+    //glutSwapBuffers();
+    //mesma coisa
+    //glutPostRedisplay();
 }
 
 void drawTexture(float x0, float y0, float x1, float y1,GLuint textureIndex){
@@ -101,4 +131,5 @@ void genColor(){
     if(G<0)G=0;
     if(B>1)B=1;
     if(B<0)B=0;
+    //glutPostRedisplay();
 }

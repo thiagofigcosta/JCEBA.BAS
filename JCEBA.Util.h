@@ -33,10 +33,7 @@ float currentWidth=worldWidth,currentHeight=worldHeight;
 int mouseX=0,mouseY=0;
 int players=1;
 int player1,player2;
-<<<<<<< HEAD
 int soundState=1,musicState=1;
-=======
->>>>>>> master
 
 typedef struct point{
   int x;

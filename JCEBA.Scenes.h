@@ -10,11 +10,7 @@ Rectangle pos_global,pos_btnBack,pos_flagBR,pos_flagUSA,pos_flagIslamic,pos_flag
           pos_Splash;
 
 Point pos_music, pos_wind,pos_mapgen,pos_difficulty,pos_lifeInitAmount,pos_bombInitAmount, pos_instructions,
-<<<<<<< HEAD
       pos_pressEnterToContinue,pos_sound,pos_language;
-=======
-      pos_pressEnterToContinue;
->>>>>>> master
 
 void defineCords(){
   pos_global.p0.x=-currentWidth/2;pos_global.p0.y=-currentHeight/2;
@@ -43,11 +39,8 @@ void defineCords(){
   pos_difficulty.x=-350;pos_difficulty.y=30;
   pos_lifeInitAmount.x=-350;pos_lifeInitAmount.y=-10;
   pos_bombInitAmount.x=-350;pos_bombInitAmount.y=-50;
-<<<<<<< HEAD
   pos_sound.x=-350;pos_bombInitAmount.y=-90;
   pos_language.x=-350;pos_bombInitAmount.y=-130;
-=======
->>>>>>> master
   pos_instructions.x=-350;pos_instructions.y=150;
   pos_pressEnterToContinue.x=-115;pos_pressEnterToContinue.y=-200;
 }
@@ -62,11 +55,7 @@ void createList()
     optionsIcon=glGenLists(1);
     howtoIcon=glGenLists(1);
     quitIcon=glGenLists(1);
-<<<<<<< HEAD
     optionsMenu=glGenLists(8);
-=======
-    optionsMenu=glGenLists(6);
->>>>>>> master
     backButton=glGenLists(1);
     instructionsMenu=glGenLists(1);
     onePlayerButton=glGenLists(1);
@@ -120,7 +109,6 @@ void createList()
         drawTexture(pos_btnQuit,0.5,tex_btn_Exit);glEndList();
 
     glNewList(optionsMenu,GL_COMPILE);
-<<<<<<< HEAD
         drawText(GLUT_BITMAP_HELVETICA_18,str_music,pos_music,0.4);
         drawText(GLUT_BITMAP_HELVETICA_18,str_wind,pos_wind,0.4);
         drawText(GLUT_BITMAP_HELVETICA_18,str_mapgen,pos_mapgen,0.4);
@@ -129,23 +117,11 @@ void createList()
         drawText(GLUT_BITMAP_HELVETICA_18,str_bombInitAmount,pos_bombInitAmount,0.4);
         drawText(GLUT_BITMAP_HELVETICA_18,str_sound,pos_sound,0.4);
         drawText(GLUT_BITMAP_HELVETICA_18,str_Language,pos_language,0.4);
-=======
-        drawText(GLUT_BITMAP_HELVETICA_18,music,pos_music,0.4);
-        drawText(GLUT_BITMAP_HELVETICA_18,wind,pos_wind,0.4);
-        drawText(GLUT_BITMAP_HELVETICA_18,mapgen,pos_mapgen,0.4);
-        drawText(GLUT_BITMAP_HELVETICA_18,difficulty,pos_difficulty,0.4);
-        drawText(GLUT_BITMAP_HELVETICA_18,lifeInitAmount,pos_lifeInitAmount,0.4);
-        drawText(GLUT_BITMAP_HELVETICA_18,bombInitAmount,pos_bombInitAmount,0.4);
->>>>>>> master
     glEndList();
     //vamo deixar pra cirar os botoes qnd aprendermos a transladar eles
 
     glNewList(instructionsMenu,GL_COMPILE);
-<<<<<<< HEAD
         drawText(GLUT_BITMAP_HELVETICA_18,str_howToPlay,pos_instructions,0.4);
-=======
-        drawText(GLUT_BITMAP_HELVETICA_18,howToPlay,pos_instructions,0.4);
->>>>>>> master
     glEndList();
 
     glNewList(onePlayerButton,GL_COMPILE);

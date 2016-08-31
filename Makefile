@@ -21,10 +21,7 @@ run: all
 
 rerun: clean all
 	./$(EXEC)
-<<<<<<< HEAD
 	rm -rf *.o
-=======
->>>>>>> master
 
 install: all
 	@mv $(EXEC) $(bindir)/

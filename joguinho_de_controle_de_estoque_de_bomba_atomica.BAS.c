@@ -38,7 +38,11 @@ void preMenu(){
     if(A>=2)
     {
         glColor4f(1,1,0,(A-2)*4);
+<<<<<<< HEAD
         drawText(GLUT_BITMAP_HELVETICA_18,str_pressEnterToContinue,pos_pressEnterToContinue,0.9);
+=======
+        drawText(GLUT_BITMAP_HELVETICA_18,pressEnterToContinue,pos_pressEnterToContinue,0.9);
+>>>>>>> master
     }
     if(ENTER||MOUSE1)
     {

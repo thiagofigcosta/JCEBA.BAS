@@ -1,0 +1,185 @@
+# depslib dependency file v1.0
+1473933990 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\joguinho_de_controle_de_estoque_de_bomba_atomica.bas.cpp
+	"JCEBA.LoadLibs.h"
+
+1473937522 c:\users\nanotech corporation\desktop\jceba.bas\cro\jceba.loadlibs.h
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<cstdio>
+	<GL/glew.h>
+	<GL/freeglut.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<SOIL.h>
+	"Libs/soil/SOIL.h"
+	"Libs/JCEBA.Globals.h"
+	"Libs/JCEBA.Util.h"
+	"Libs/JCEBA.GL.h"
+	<AL/alut.h>
+	"Libs/JCEBA.AL.h"
+	"Libs/JCEBA.AL2.h"
+	"Libs/JCEBA.Strings.h"
+	"Libs/JCEBA.LoadFiles.h"
+	"Libs/JCEBA.Lists.h"
+	"Libs/JCEBA.Options.h"
+	"Libs/JCEBA.Buttons.h"
+	"Libs/JCEBA.PlayerBehaviour.h"
+	"Libs/JCEBA.BulletBehaviour.h"
+	"Libs/JCEBA.Mechanics.h"
+	"Libs/JCEBA.Scenes.h"
+	"Libs/JCEBA.IO.h"
+	"Libs/JCEBA.AI.h"
+	"Libs/JCEBA.Settings.h"
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\soil.h
+
+1473932398 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alut.h
+	<alc.h>
+	<al.h>
+	<OpenAL/alc.h>
+	<OpenAL/al.h>
+	<AL/al.h>
+	<AL/alc.h>
+
+1473936603 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.globals.h
+
+1473931536 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.util.h
+
+1473931641 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.gl.h
+
+1473933990 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.al.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.strings.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.loadfiles.h
+
+1473931616 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.lists.h
+
+1473931596 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.options.h
+
+1473931632 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.buttons.h
+
+1473931574 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.playerbehaviour.h
+
+1473931656 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.bulletbehaviour.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.mechanics.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.scenes.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.io.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.ai.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.settings.h
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutbufferdata.c
+	"alutInternal.h"
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutinternal.h
+	"config.h"
+	<stdlib.h>
+	<stdint.h>
+	<basetsd.h>
+	<AL/alut.h>
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutcodec.c
+	"alutInternal.h"
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\aluterror.c
+	"alutInternal.h"
+	<stdio.h>
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutinit.c
+	"alutInternal.h"
+
+1473932068 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutinputstream.c
+	"alutInternal.h"
+	<stdio.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutloader.c
+	"alutInternal.h"
+	<ctype.h>
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutoutputstream.c
+	"alutInternal.h"
+	<string.h>
+
+1473932097 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alututil.c
+	"alutInternal.h"
+	<time.h>
+	<errno.h>
+	<unistd.h>
+	<windows.h>
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutversion.c
+	"alutInternal.h"
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutwaveform.c
+	"alutInternal.h"
+	<math.h>
+	<string.h>
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\image_dxt.c
+	"image_DXT.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\image_dxt.h
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\image_helper.c
+	"image_helper.h"
+	<stdlib.h>
+	<math.h>
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\image_helper.h
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\soil.c
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<Carbon/Carbon.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	"SOIL.h"
+	"stb_image_aug.h"
+	"image_helper.h"
+	"image_DXT.h"
+	<stdlib.h>
+	<string.h>
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\stb_image_aug.h
+	<stdio.h>
+
+1473874300 source:c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\stb_image_aug.c
+	"stb_image_aug.h"
+	<math.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	<assert.h>
+	<stdarg.h>
+	"stbi_DDS_aug.h"
+	"stbi_DDS_aug_c.h"
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\stbi_dds_aug.h
+
+1473874300 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\soil\stbi_dds_aug_c.h
+
+1473932746 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\al\alutloader.c
+	"alutInternal.h"
+	<ctype.h>
+
+1473937404 c:\users\nanotech corporation\desktop\jceba.bas\cro\libs\jceba.al2.h
+

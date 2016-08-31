@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CROSS" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Win32/JCEBA.WIN" prefix_auto="1" extension_auto="1" />
+				<Option object_output="bin/Win32/obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/glut32.lib" />
+					<Add library="../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libfreeglut.a" />
+					<Add library="../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libfreeglut_static.a" />
+					<Add library="../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libopengl32.a" />
+					<Add library="../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libOpenAL32.dll.a" />
+					<Add library="../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/alut.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="JCEBA.LoadLibs.h" />
+		<Unit filename="Libs/JCEBA.AI.h" />
+		<Unit filename="Libs/JCEBA.AL.h" />
+		<Unit filename="Libs/JCEBA.AL2.h" />
+		<Unit filename="Libs/JCEBA.BulletBehaviour.h" />
+		<Unit filename="Libs/JCEBA.Buttons.h" />
+		<Unit filename="Libs/JCEBA.GL.h" />
+		<Unit filename="Libs/JCEBA.Globals.h" />
+		<Unit filename="Libs/JCEBA.IO.h" />
+		<Unit filename="Libs/JCEBA.Lists.h" />
+		<Unit filename="Libs/JCEBA.LoadFiles.h" />
+		<Unit filename="Libs/JCEBA.Mechanics.h" />
+		<Unit filename="Libs/JCEBA.Options.h" />
+		<Unit filename="Libs/JCEBA.PlayerBehaviour.h" />
+		<Unit filename="Libs/JCEBA.Scenes.h" />
+		<Unit filename="Libs/JCEBA.Settings.h" />
+		<Unit filename="Libs/JCEBA.Strings.h" />
+		<Unit filename="Libs/JCEBA.Util.h" />
+		<Unit filename="Libs/soil/SOIL.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libs/soil/SOIL.h" />
+		<Unit filename="Libs/soil/image_DXT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libs/soil/image_DXT.h" />
+		<Unit filename="Libs/soil/image_helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libs/soil/image_helper.h" />
+		<Unit filename="Libs/soil/stb_image_aug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libs/soil/stb_image_aug.h" />
+		<Unit filename="Libs/soil/stbi_DDS_aug.h" />
+		<Unit filename="Libs/soil/stbi_DDS_aug_c.h" />
+		<Unit filename="joguinho_de_controle_de_estoque_de_bomba_atomica.BAS.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

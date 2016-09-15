@@ -16,7 +16,8 @@ Joguinho de controle de estoque de bomba atômica.BAS
 			TODOS
 
 		Itens Adicionais Implementados:
-
+		-Apenas executavel Win32:
+			http://www.4shared.com/zip/kBhsr2t2ce/JCEBAwindows.html
 		-Video:
 			https://www.youtube.com/watch?v=59J2it0dCgc
 		-Relativas a texturas:

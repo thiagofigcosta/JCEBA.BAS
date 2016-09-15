@@ -1,23 +1,19 @@
-ALfloat ListenerPos[] = { 0.0, 0.0, 0.0 };                                  //Position of the listener
-ALfloat ListenerVel[] = { 0.0, 0.0, 0.0 };                                  //Velocity of the listener
+ALfloat ListenerPos[] = { 0.0, 0.0, 0.0 };
+ALfloat ListenerVel[] = { 0.0, 0.0, 0.0 };
 ALfloat ListenerOri[] = { 0.0, 0.0, -1.0,  0.0, 1.0, 0.0 };
-ALfloat SourcePos[] = { 0.0, 0.0, 0.0 };                                    //Position of the source sound
+ALfloat SourcePos[] = { 0.0, 0.0, 0.0 };
 ALfloat SourceVel[] = { 0.0, 0.0, 0.0 };
 
 ALuint ALbuffer[NUM_BUFFERS];
 
 int currentFileLoading=0;
 
-//alSourcePlay(source[0]); TOCA MSUICA
-//alSourcePause(source[0]); pausa MSUICA
-//alSourceStop(source[0]); para MSUICA
-
 void ALinit(){
     ALCdevice *device;                                                          //Create an OpenAL Device
     ALCcontext *context;                                                        //And an OpenAL Context
     device = alcOpenDevice(NULL);                                               //Open the device
     context = alcCreateContext(device, NULL);                                   //Give the device a context
-    alcMakeContextCurrent(context);                                             //Make the context the current                     //Error during context handeling
+    alcMakeContextCurrent(context);                                             //Make the context the current
 
     alListenerfv(AL_POSITION,    ListenerPos);                                  //Set position of the listener
     alListenerfv(AL_VELOCITY,    ListenerVel);                                  //Set velocity of the listener
@@ -93,12 +89,12 @@ bool loadSound(char* path,float vol,ALboolean loop){//AL_TRUE AL_FALSE
 
     alBufferData(ALbuffer[currentFileLoading], format, buf, dataSize, frequency);
 
-    alSourcei (ALsource[currentFileLoading], AL_BUFFER,   ALbuffer[currentFileLoading]);
-    alSourcef (ALsource[currentFileLoading], AL_PITCH,    1.0f     );
-    alSourcef (ALsource[currentFileLoading], AL_GAIN,     vol     );
-    alSourcefv(ALsource[currentFileLoading], AL_POSITION, SourcePos);
-    alSourcefv(ALsource[currentFileLoading], AL_VELOCITY, SourceVel);
-    alSourcei (ALsource[currentFileLoading], AL_LOOPING,  loop );
+    alSourcei (ALsource[currentFileLoading], AL_BUFFER,ALbuffer[currentFileLoading]);
+    alSourcef (ALsource[currentFileLoading], AL_PITCH,1.0f);
+    alSourcef (ALsource[currentFileLoading], AL_GAIN,vol);
+    alSourcefv(ALsource[currentFileLoading], AL_POSITION,SourcePos);
+    alSourcefv(ALsource[currentFileLoading], AL_VELOCITY,SourceVel);
+    alSourcei (ALsource[currentFileLoading], AL_LOOPING,loop );
     fclose(fp);
     delete[] buf;
 

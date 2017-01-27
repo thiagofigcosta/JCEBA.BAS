@@ -1,4 +1,16 @@
 # JCEBA.BAS
+```
+#####################
+#*  * **** *  *  ** #
+#** * *  * ** * *  *#
+#* ** **** * ** *  *#
+#*  * *  * *  *  ** #
+#####################
+```
+DevelopedBy: Th[i]ago
+email: nanotechbr.corp@gmail.com
+youtube: https://www.youtube.com/user/LegiaoGamerBR
+
 Joguinho de controle de estoque de bomba atômica.BAS
 
 		Instruções para compilar (no arquivo loadLibs.h tem opcoes para usar ou nao alut e soil):
